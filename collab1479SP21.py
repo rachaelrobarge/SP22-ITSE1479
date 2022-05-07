@@ -99,9 +99,46 @@ def showMenu():
 # *****************************************************************************************
 # Function Definitions Section
 # *****************************************************************************************
-# Add your function below.  
-#  
-# FunctionName:  lastnameFunction(your parameters)
+# Add your function below.
+txtDict = {}
+txtDict["LOL"] = "LOL: acronym for 'Laughing out loud'"
+txtDict["BTW"] = "BTW: acronym for 'By the way'"
+txtDict["IDK"] = "IDK: acronym for 'I don't know'"
+txtDict["AFAIK"] = "AFAIK: acronym for 'As far as I know'"
+txtDict["POV"] = "POV: acronym for 'Point of view'"
+txtDict["DM"] = "DM: acronym for 'Direct message'"
+txtDict["AFK"] = "AFK: acronym for 'Away from keyboard'"
+txtDict["BC"] = "BC: short for 'Because'"
+txtDict["OMG"] = "OMG: acronym for 'Oh my god'"
+txtDict["OP"] = "OP: acronym for 'Original post/Original poster'"
+txtDict["FTW"] = "FTW: acronym for 'For the win'"
+txtDict["TY"] = "TY: acronym for 'Thank you'"
+txtDict["IMO"] = "IMO: acronym for 'In my opinion'"
+txtDict["IRL"] = "IRL: acronym for 'In real life'"
+txtDict["ROFL"] = "ROFL: acronym for 'Rolling on the floor laughing'"
+txtDict["YOLO"] = "YOLO: acronym for 'You only live once'"
+txtDict["YEET"] = "YEET: To throw something, focusing on distance rather than accuracy"
+txtDict["PWN"] = "PWN: Used in gaming to describe beating another player. A misspelling of the word 'own'"
+txtDict["LEET"] = "LEET: Used to describe something spectacular. Derived from 'elite'"
+txtDict["1337"] = "1337: Alternate version of 'LEET'"
+txtDict["HAX"] = "HAX: Used to imply hacking, typically as a joke among gamers"
+    
+def txtFunction():
+    print("~*~*~*~ Text Messaging for Old People ~*~*~*~")
+    print("Learn the hip SMS (short message service) lingo!")
+    next = input("Please enter a text shortcut or press 'x' to exit: ")
+    next = next.upper()
+    while next != "X":
+        if next in txtDict:
+            print(txtDict[next])
+        else:
+            print("Sorry, that is not in our hip SMS dictionary.")
+        
+        next = input("Please enter a text shortcut or press 'x' to exit: ")
+        next = next.upper()
+        
+txtFunction()
+# FunctionName:  RobargeFunction()
 # *****************************************************************************************
 
 # *****************************************************************************************
